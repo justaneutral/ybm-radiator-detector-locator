@@ -1,0 +1,177 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GANT DIALOG DISCARDABLE  0, 0, 326, 38
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Gantelia"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Start",IDC_START,0,0,40,15
+    PUSHBUTTON      "S&top",IDC_STOP,40,0,40,15
+    PUSHBUTTON      "E&xit",IDCANCEL,160,0,40,15
+    PUSHBUTTON      "&Clear",IDC_CLEAR,80,0,40,15
+    PUSHBUTTON      "&Windows",IDC_WIN,200,0,40,15
+    PUSHBUTTON      "&Test",IDC_TEST,120,0,40,15
+    CTEXT           "",IDC_DISTANCE,5,25,205,8
+    CONTROL         " Samples:",IDC_CLEAR_BUTTON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,214,24,45,10
+    LTEXT           "0",IDC_SAMPLE,261,25,20,8
+    PUSHBUTTON      "Mode",IDC_MODE,240,0,40,14
+    LTEXT           "",IDC_SIL,290,5,30,8
+    CONTROL         "",IDC_CLEAR_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    315,25,8,10
+END
+
+IDD_SCAN DIALOG DISCARDABLE  0, 0, 314, 38
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Start",IDC_START,0,0,45,15
+    PUSHBUTTON      "E&xit",IDCANCEL,180,0,45,14
+    PUSHBUTTON      "S&top",IDC_STOP,45,0,45,14
+    PUSHBUTTON      "&Windows",IDC_WINDOW,270,0,45,14
+    CTEXT           "",IDC_SCAN_STATE,5,25,260,8
+    PUSHBUTTON      "AR-3000A",IDC_COMMAND,135,0,45,14
+    PUSHBUTTON      "Mode",IDC_MODE,225,0,45,14
+    PUSHBUTTON      "Sa&ve",IDC_SAVE,90,0,45,14
+END
+
+IDD_START DIALOG DISCARDABLE  0, 0, 210, 25
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Debugger"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,0,0,210,25
+    PUSHBUTTON      "E&xit",IDCANCEL,155,5,50,15
+    PUSHBUTTON      "&Scan",IDC_SCAN_START,5,5,50,15
+    PUSHBUTTON      "&Locate",IDC_GANT_START,105,5,50,15
+    PUSHBUTTON      "&Check",IDC_CHECK_START,55,5,50,15
+END
+
+IDD_START_SCAN DIALOG DISCARDABLE  0, 0, 221, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Frequency"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GET_F1,85,10,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GET_F2,85,25,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GET_FS,85,40,40,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDOK,55,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,85,50,14
+    LTEXT           "Start Frequency",IDC_STATIC,10,15,75,8
+    LTEXT           "End  frequency",IDC_STATIC,10,30,70,8
+    LTEXT           "Frequency Increment",IDC_STATIC,10,45,70,8
+    COMBOBOX        IDC_GET_RMODE,85,60,40,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL
+    CONTROL         "Receiving mode",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,10,65,55,8
+    CONTROL         "Attenuator",IDC_GET_FATTEN,"Button",BS_AUTORADIOBUTTON,
+                    160,65,45,10
+    LTEXT           "MHz",IDC_STATIC,130,15,15,8
+    LTEXT           "MHz",IDC_STATIC,130,30,15,8
+    LTEXT           "KHz",IDC_STATIC,130,45,15,8
+    CONTROL         "&Up",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,170,25,25,
+                    10
+    CONTROL         "&Down",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,170,41,30,
+                    10
+    GROUPBOX        " Direcion ",IDC_STATIC,160,10,50,50
+END
+
+IDD_COMMAND DIALOG DISCARDABLE  0, 0, 157, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter AR-3000A command:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMAND,20,10,115,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,20,35,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,85,35,50,14,NOT WS_TABSTOP
+END
+
+IDD_CHECK DIALOG DISCARDABLE  0, 0, 321, 38
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Check"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "E&xit",IDCANCEL,160,0,40,14
+    PUSHBUTTON      "&Start",IDC_START,0,0,40,14
+    PUSHBUTTON      "S&top",IDC_STOP,40,0,40,14
+    PUSHBUTTON      "Ch&oose",IDC_CHOOSE,80,0,40,14
+    PUSHBUTTON      "S&ave",IDC_SAVE,120,0,40,14
+    PUSHBUTTON      "&Clear",IDC_CLEAR,200,0,40,14
+    CTEXT           "",IDC_OUT,5,25,310,8
+    PUSHBUTTON      "&Windows",IDC_WINDOW,240,0,40,14
+    PUSHBUTTON      "Mode",IDC_MODE,280,0,40,14
+END
+
+IDD_SELECT DIALOG DISCARDABLE  45, 60, 225, 14
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Frequency"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,0,45,14
+    PUSHBUTTON      "&Next",IDC_NEXT,45,0,45,14
+    PUSHBUTTON      "&Prev",IDC_PREV,90,0,45,14
+    PUSHBUTTON      "&Best",IDC_BEST,0,0,45,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,0,45,14
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

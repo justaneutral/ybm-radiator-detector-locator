@@ -1,0 +1,97 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_START_OPTIONS DIALOG DISCARDABLE  40, 80, 257, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GET_F1,50,35,35,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GET_F2,50,55,35,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NSOUND,190,35,21,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NCIRCLE,190,55,21,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "AR-3000A ...",IDC_COMMAND,170,95,55,14
+    DEFPUSHBUTTON   "Start Scan",IDOK,30,95,55,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,95,55,14
+    RTEXT           "From",IDC_STATIC,25,35,20,8
+    RTEXT           "To",IDC_STATIC,35,56,10,8
+    LTEXT           "MHz",IDC_STATIC,105,35,15,8
+    LTEXT           "MHz",IDC_STATIC,105,55,15,8
+    RTEXT           "Sounds",IDC_STATIC,154,35,30,8
+    RTEXT           "Scan",IDC_STATIC,161,55,25,8
+    GROUPBOX        " Frequency Range ",IDC_STATIC,20,15,105,60
+    GROUPBOX        " Repeat ",IDC_STATIC,150,15,85,60
+    SCROLLBAR       IDC_F1_ARR,90,35,10,15,SBS_VERT
+    SCROLLBAR       IDC_F2_ARR,90,55,10,15,SBS_VERT
+    SCROLLBAR       IDC_SOUNDS_ARR,214,35,10,15,SBS_VERT
+    SCROLLBAR       IDC_SCAN_ARR,214,55,10,15,SBS_VERT
+END
+
+IDD_COMMAND DIALOG DISCARDABLE  20, 40, 191, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Execute AR-3000A command:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMAND,25,15,140,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Enter",IDOK,35,40,50,14
+    PUSHBUTTON      "E&xit",IDCANCEL,105,40,50,14
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
